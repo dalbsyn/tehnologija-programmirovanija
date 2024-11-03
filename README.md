@@ -1,6 +1,40 @@
 # Список команд для командной строки
-Нужен установленный `git` и `Python`.
+Нужен установленный `git`, `Python`, `virtualenv`.
 
+## Переход в папку
+```shell
+$ cd <путь до папки>
+
+[Вывода нет]
+```
+где `<путь до папки>` - путь до папки вида "папка_1\папка_2\...".
+
+## Запуск .py файла
+```shell
+$ python <путь до файла>
+
+[Вывод программы]
+```
+где `<путь до файла>` - путь до папки вида "папка_1\папка_2\...".
+
+## Создание virtualenv
+```shell
+$ virtualenv env
+
+created virtual environment CPython3.12.7.final.0-64 in 953ms
+  creator CPython3Posix(dest=/media/HDWD220/username/Projects/cursovoi-project-1/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=/home/username/.local/share/distrobox-archlinux-devel/.local/share/virtualenv)
+    added seed packages: pip==24.2
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+```
+
+## Активация virtualenv
+```shell
+$ cd env\Scripts\
+$ activate
+$ cd ..\..
+```
+**Внимание:** приведен пример активации относительно корневой папки проекта, где находится папка `env`.
 ## Вывод состояния репозитория
 ```shell
 $ git status
