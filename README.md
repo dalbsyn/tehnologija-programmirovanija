@@ -35,6 +35,18 @@ $ activate
 $ cd ..\..
 ```
 **Внимание:** приведен пример активации относительно корневой папки проекта, где находится папка `env`.
+## Скачать репозиторий
+```shell
+$ git clone <ссылка на репозиторий>
+Клонирование в «название-репозитория»...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 15 (delta 5), reused 11 (delta 1), pack-reused 0 (from 0)
+Получение объектов: 100% (15/15), готово.
+Определение изменений: 100% (5/5), готово.
+```
+где `<ссылка на репозиторий>` - ссылка, который можно получить на домашней странице репозитория по кнопке и копирования ссылки, вроде `https://github.com/dalbsyn/tehnologija-programmirovanija.git`.
 ## Вывод состояния репозитория
 ```shell
 $ git status
