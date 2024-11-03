@@ -38,6 +38,7 @@ $ cd ..\..
 ## Скачать репозиторий
 ```shell
 $ git clone <ссылка на репозиторий>
+
 Клонирование в «название-репозитория»...
 remote: Enumerating objects: 15, done.
 remote: Counting objects: 100% (15/15), done.
