@@ -95,7 +95,7 @@ To push the current branch and set the remote as upstream, use
 To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.
 ```
-Достаточно вставить команду выше и все будет работать.
+Достаточно вставить команду выше и все будет работать, то есть `git push --set-upstream origin название_ветки`.
 Для того, чтобы происходило автоматически, нужно выполнить следующую команду:
 ```shell
 $ git config push.autoSetupRemote true
