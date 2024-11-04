@@ -16,3 +16,21 @@ class Device:
 
     def set_battery_life(self, value):
         self._battery_life = value
+
+    # Второе задание
+    class Smartphone:
+        def call(self):
+            print("Телефон звонит")
+
+    class Laptop:
+        def compile_code(self):
+            print("Ноутбук компилирует код")
+
+    class Tablet:
+        def draw(self):
+            print("Планшет используется для рисования")
+
+tabs4 = Device.Tablet()
+
+tabs4.draw()
+
