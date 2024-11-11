@@ -16,11 +16,11 @@ class Vehicle:
     def set_make(self, value):
         self._make = _make
 
-    def set_model(self):
+    def set_model(self, value):
         self._make = _make
 
-    def get_year(self):
-        self._year = _year
+    def set_year(self, value):
+        self._year = self._year
     
 class Car(Vehicle):
     def play_music(self):
@@ -32,5 +32,9 @@ class Truck(Vehicle):
 
 
 honda = Vehicle(None, None, None)
+lmao = Truck(None, None, None)
 
-print(honda.get_year)
+honda.set_year("228")
+
+print(honda.get_year())
+
