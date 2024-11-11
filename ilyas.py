@@ -1,3 +1,4 @@
+# Вариант 5
 class = pet:(_name, _age)
 def_pet_[Dog]
 bark()
