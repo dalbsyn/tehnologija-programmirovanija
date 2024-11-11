@@ -1,51 +1,35 @@
-class Device:
-    def init(self, name, battery_life):
-        self._name = name
-        self._battery_life = battery_life
-
-    def get_name(self):
-        return self._name
-
-    def set_name(self, name):
-        self._name = name
-
-    def get_battery_life(self):
-        return self._battery_life
-
-    def set_battery_life(self, battery_life):
-        self._battery_life = battery_life
-
-# 2. Наследование
-class Smartphone(Device):
-    def call(self):
-        print("Телефон звонит")
+#3 Вариант
+#1 Инкапсуляция
+Class Vehicle
+   def init(self, _make, _model, _year):
+     self._make= make
+     self._model= model
+     self._year= year
+   def get_make(self):
+       return self._make
+   def set_make(self,make):
+      self._make= make
+   def get_model(self):
+       return self._model
+   def set_vodel(self,model):
+      self._model= model
+   def get_year(self):
+       return self._year
+   def set_year(self,year):
+      self._year= year
+#2 Наследование
+Сlass Car(Vehicle):
+    def play_music(self):
+        print("Играет музыка")
     
     def use(self):
-        print("Смартфон используется для звонков и приложений")
+        print("Машина играет музыку")
 
-class Laptop(Device):
-    def compile_code(self):
-        print("Ноутбук компилирует код")
+Сlass Truck(Vehicle):
+    def load_cargo(self):
+        print("Грузит груз")
     
     def use(self):
-        print("Ноутбук используется для программирования и работы")
+        print("Грузовик грузит груз")
 
-class Tablet(Device):
-    def draw(self):
-        print("Планшет используется для рисования")
-    
-    def use(self):
-        print("Планшет используется для мультимедиа и рисования")
 
-# 3. Полиморфизм (Overriding)
-# Создаем объекты классов
-smartphone = Smartphone("iPhone", 80)
-laptop = Laptop("MacBook", 90)
-tablet = Tablet("iPad", 70)
-
-# Список с объектами
-devices = [smartphone, laptop, tablet]
-
-# Вызов метода use() для каждого объекта
-for device in devices:
-    device.use()
