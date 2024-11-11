@@ -18,19 +18,29 @@ class Device:
         self._battery_life = value
 
     # Второе задание
-    class Smartphone:
+    class Smartphone(Device):
+        super.__init__(name, battery_life)
         def call(self):
             print("Телефон звонит")
+        def use(self):
+            print("Телефон используется")
 
     class Laptop:
         def compile_code(self):
             print("Ноутбук компилирует код")
+        def use(self):
+            print("Ноутбук используется")
 
     class Tablet:
         def draw(self):
             print("Планшет используется для рисования")
+        def use(self):
+            print("Планшет используется")
 
-tabs4 = Device.Tablet()
+aplephon = Device.Smartphone()
+sasungtablo = Device.Tablet()
+huweilap = Device.Laptop()
 
-tabs4.draw()
+aplephon.set_name, aplephon.set_battery_life = "aplephon", "85"
 
+print(aplephon.get_name())
