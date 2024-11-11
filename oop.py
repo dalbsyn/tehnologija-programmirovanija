@@ -1,30 +1,36 @@
-class Device:
-    def __init__(self, name, battery_life):
-        self._name = name          # приватное поле для имени устройства
-        self._battery_life = battery_life  # приватное поле для времени работы от батареи
+class Employee():
+    def __init__(self, name, salary):
+        self._name = name
+        self._salary = salary
 
-    # Метод для получения значения имени устройства
     def get_name(self):
         return self._name
+    def get_salary(self):
+        return self._salary
 
-    # Метод для изменения имени устройства
     def set_name(self, name):
-        self._name = name
+        return self._name
+    def set_salary(self, salary):
+        return self._salary
 
-    # Метод для получения времени работы от батареи
-    def get_battery_life(self):
-        return self._battery_life
+    def c_bonus(self, salary):
+        return self._salary
 
-    # Метод для изменения времени работы от батареи
-    def set_battery_life(self, battery_life):
-        self._battery_life = battery_life
-device = Device("Phone", 12)
-print(device.get_name())  # Вывод: Phone
-print(device.get_battery_life())  # Вывод: 12
+    class Manager(Employee):
+        def c_bonus(self, salary):
+            return self._salary * 0.1
+    class Engineer(Employee):
+        def c_bonus(self, salary):
+            return self._salary * 0.5
+    class Intern(self, salary):
+        def c_bonus(self, salary):
+            return self._salary * 0.9
 
-# Изменение значений
-device.set_name("Laptop")
-device.set_battery_life(8)
+zp_managera = Employee("Sonya", 100000)
+zp_enginera = Employee("Nasty", 200000)
+zp_interna = Employee("Ara", 10000)
 
-print(device.get_name())  # Вывод: Laptop
-print(device.get_battery_life())  # Вывод: 8
+print(c_bonus.zp_managera)
+print(c_bonus.zp_enginera)
+print(c_bonus.zp_interna)
+
