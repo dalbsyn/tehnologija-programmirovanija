@@ -1,6 +1,6 @@
 #3 Вариант
 #1 Инкапсуляция
-Class Vehicle
+Class Vehicle:
    def init(self, _make, _model, _year):
      self._make= make
      self._model= model
