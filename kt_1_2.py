@@ -7,17 +7,17 @@ class ZooAnimal():
     def sound(self):
         print("Животное издает звук")
 
-    def get_weight(self):
-        print(self._weight)
-
-    def get_species(self):
-        print(self._species)
-
     def set_species(self, value):
         self._species = value
 
     def set_weight(self, value):
         self._weight = value
+
+    def get_weight(self):
+        return self._weight
+
+    def get_species(self):
+        return self._species
 
 class Lion(ZooAnimal):
     def roar(self):
@@ -38,8 +38,11 @@ class Penguin(ZooAnimal):
         print("ПИНГВИН ПЛАВАЕТ КАК ТОРПЕДА")
 
 # Животное
-generic_animal = ZooAnimal(None, None)
+generic_animal = ZooAnimal("ass", "ass")
+print(generic_animal.get_species())
 generic_animal.sound()
+generic_animal.set_species("man")
+print(generic_animal.get_species())
 
 # Лев
 lion = Lion(None, None)
