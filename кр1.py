@@ -1,6 +1,9 @@
 #3 Вариант
 #1 Инкапсуляция
-Class Vehicle
+from pyclbr import Class
+
+
+Class Vehicle:
    def init(self, _make, _model, _year):
      self._make= make
      self._model= model
@@ -18,14 +21,14 @@ Class Vehicle
    def set_year(self,year):
       self._year= year
 #2 Наследование
-Сlass Car(Vehicle):
+Class Car(Vehicle):
     def play_music(self):
         print("Играет музыка")
     
     def use(self):
         print("Машина играет музыку")
 
-Сlass Truck(Vehicle):
+Class Truck(Vehicle):
     def load_cargo(self):
         print("Грузит груз")
     
