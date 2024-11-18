@@ -8,29 +8,27 @@ class Employee():
     def get_salary(self):
         return self._salary
 
-    def set_name(self, name):
-        return self._name
     def set_salary(self, salary):
-        return self._salary
+        self._salary = salary
 
-    def c_bonus(self, salary):
-        return self._salary
+    def c_bonus(self):
+        return 500
 
-    class Manager(Employee):
-        def c_bonus(self, salary):
-            return self._salary * 0.1
-    class Engineer(Employee):
-        def c_bonus(self, salary):
-            return self._salary * 0.5
-    class Intern(self, salary):
-        def c_bonus(self, salary):
-            return self._salary * 0.9
+class Manager(Employee):
+    def c_bonus(self):
+        return self._salary * 0.1
+class Engineer(Employee):
+    def c_bonus(self):
+        return self._salary * 0.5
+class Intern(Employee):
+    def c_bonus(self):
+        return self._salary * 0.9
 
-zp_managera = Employee("Sonya", 100000)
-zp_enginera = Employee("Nasty", 200000)
-zp_interna = Employee("Ara", 10000)
+zp_managera = Manager("Sonya", 100000)
+zp_enginera = Engineer("Nasty", 200000)
+zp_interna = Intern("Ara", 10000)
 
-print(c_bonus.zp_managera)
-print(c_bonus.zp_enginera)
-print(c_bonus.zp_interna)
+print(zp_managera.c_bonus())
+print(zp_enginera.c_bonus())
+print(zp_interna.c_bonus())
 
