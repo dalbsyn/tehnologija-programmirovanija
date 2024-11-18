@@ -1,4 +1,4 @@
-1 Вариант
+
 class Pet:
    def __init__(self, name, age):
        self.__name = name
@@ -17,6 +17,7 @@ class Pet:
        self.__age = age
 
    def make_sound(self):
+       pass
 
 class Dog(Pet):
    def bark(self):
