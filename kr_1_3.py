@@ -108,17 +108,17 @@ class Device:
         print("ON")
 
 
-class Phone:
+class Phone(Device):
     def turn_on(self):
         print("Phone is now on")
 
 
-class Laptop:
+class Laptop(Device):
     def turn_on(self):
         print("Laptop is booting up")
 
 
-class Device:
+class Device(Device):
     def turn_on(self):
         print("Tablet is ready to use")
 
