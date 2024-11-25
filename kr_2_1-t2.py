@@ -1,4 +1,4 @@
-# Вариант 5 - 1 задание
+# Вариант 5 - 2 задание
 
 class Computer:
     def __init__(self):
@@ -26,9 +26,6 @@ class Hardware:
 class Processor(Hardware):
     def __init__(self):
         super().__init__()
-
-    def check_state(self):
-        print("Processor", super().__message)
 
 class RAM:
     def check_state(self):
