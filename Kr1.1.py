@@ -1,22 +1,22 @@
 #Вариант 1
 class Vehicle:
-   def__init__(self, speed, color):
-   self._speed=speed
-   self._color=color
+   def __init__(self, speed, color):
+    self._speed = speed
+    self._color = color
 
    def get_speed():
-   return self._speed
+      return self._speed
 
    def set_speed():
-   if speed<0:
+     if speed < 0:
       print("скорость не может быть отрицательной")
-   self._speed=speed
+      self._speed=speed
 
-   def get_color:
-   return self._color
+   def get_color():
+    return self._color
 
-   def set_color:
-   self._color=color
+   def set_color():
+    self._color=color
 
 class Car(Vehicle):
    def drive():
