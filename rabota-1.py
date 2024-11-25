@@ -1,4 +1,4 @@
-class Vehicle:
+calass Vehicle:
     def __init__(self, _make, _model, _year):
         self._make = _make
         self._model = _model
