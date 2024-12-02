@@ -53,7 +53,6 @@ class Team:
         print(summ)
 
 player1 = Player()
-player1.add_player(10)
-
+player1.add_player(11)
 
 
