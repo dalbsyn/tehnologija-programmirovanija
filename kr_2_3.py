@@ -19,7 +19,7 @@ class Park(Infrastructure):
 
 class City:
     def __init__(self):
-        self.infrastructure = infrastructure
+        self.infrastructure = []
 
     def add_infrastructure(self, item):
         self.infrastructure.append(item)
@@ -33,13 +33,13 @@ class City:
 
 city = City()
 road = Road("Main Street")
-building = Building("Town Hall")
-park = Park("Central Park")
+building = Building("Town Hall, Sky Tower")
+park = Park("Central Park, Green Park ")
 
 city.add_infrastructure(road)
 city.add_infrastructure(building)
 city.add_infrastructure(park)
 
 print("City infrastructure:", city.list_infrastructure())
-city.remove_infrastructure(road)
-print("After removing road:", city.list_infrastructure())
+city.remove_infrastructure(building)
+print("After removing building:", city.list_infrastructure())
